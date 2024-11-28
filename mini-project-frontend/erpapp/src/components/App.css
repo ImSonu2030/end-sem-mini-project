@@ -1,0 +1,249 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header Styles */
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 100px;
+  background-color: #333;
+  color: white;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo-link {
+  text-decoration: none;
+  color: #f9f9f9;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-right: 50px;
+  transition: 0.3s;
+}
+.logout-button, .signup-button {
+  display: flex;
+  align-items: center;
+  color: #000;
+  background-color: #efefefdd;
+  border-radius: 5px;
+  font-weight:500;
+  font-size: large;
+  padding: 10px 18px;
+  border: none;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.logout-button:hover, .signup-button:hover {
+  background-color: #ffffffff;
+}
+
+/* Footer Styles --------------------------------------------------- */ 
+.footer {
+  position: fixed;
+  text-align: center;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  width: 100%;
+  bottom: 0;
+  box-sizing: border-box;
+}
+/* ---------------------------------------------------------------- */
+/* --------------------------------------------------------- */
+.student-card-section {
+  padding: 5% 10%;
+}
+.student-cards {
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 30px;
+}
+
+.student-card {
+  position: relative;
+  max-width: 300px;
+  max-height: 400px;
+  padding: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid rgba(51, 51, 51,0.6);
+  transition: 0.4s;
+  box-sizing: border-box;
+}
+.student-card::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 8px;
+  height: 20%;
+  background-color: #333333dd;
+}
+.student-card:hover {
+  border: 1px solid black;
+  box-shadow: 0 0 20px #55555577;
+}
+.student-imageBox {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  height: 40%;
+}
+.student-imageBox img {
+  width: 100%;
+  object-fit:cover;
+}
+
+.info-view-btn button {
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 12px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.info-view-btn button:hover {
+  background-color: #333;
+  color: #f9f9f9;
+}
+.error-message {
+  color: red;
+  font-weight: bold;
+}
+/* contact---------------------------------------------------------- */
+/* Contact Page Styles */
+.contact-page {
+  max-width: 700px;
+  margin: 300px auto 200px auto;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 100px #7e7e7e55;
+}
+
+.contact-page h2 {
+  font-size: 28px;
+  margin-left: 0;
+  margin-bottom: 20px;
+  color: #333;
+  text-decoration: underline;
+}
+
+.contact-page p {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #5f5f5f;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.contact-item {
+  font-size: 1.1em;
+  color: #555;
+}
+
+.contact-item strong {
+  color: black;
+}
+
+/*Student View Details -------------------------------------------------------------------------------------- */
+
+.student-card-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap:50px;
+  margin:150px auto;
+  padding:30px 100px;
+  box-sizing: border-box;
+}
+.student-profile-card {
+  position: relative;
+  border: 1px solid black;
+  max-width:400px;
+  height:500px;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.student-header{
+  position: relative;
+  width:100%;
+  height:50%;
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+}
+.student-header img {
+  width: 100%;
+  height:80%;
+  object-fit: cover;
+}
+.student-header h2 {
+  margin-top: 5px;
+  height: 20%;
+}
+.student-info{
+  padding-left: 10px;
+  margin-top: 30px;
+  border-left: 1px solid black;
+}
+.student-details-tray{
+  position: relative;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.student-details-tray::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  left: -10%;
+  width: 3px;
+  height: 50%;
+  background-color: #5a5a5a;
+}
+.student-domain, .student-specialization {
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.student-domain h3, .student-specialization h3 {
+  width: 100%;
+  top: 0;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  box-sizing: border-box;
+  border-radius:0 0  5px 12px;
+}
